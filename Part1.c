@@ -9,7 +9,7 @@
 int main()
 {
 	int x;  //x is a variable. We declare the variable as int -integer(whole number only)
-	x = 10; //initialization the variable. We give value to the variable
+	x = 8; //initialization the variable. We give value to the variable
 		//or can be written in one line as (int x = 10)
 
 	//Expression - anything that can be evaluated (to 1 value). x/2 is an expression which can be evaluated to 5
@@ -21,4 +21,5 @@ int main()
 	
 
 	printf();
-	return 0
+	return 0;
+}
