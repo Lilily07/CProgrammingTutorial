@@ -4,12 +4,14 @@
 program - calculate how many dozen of chicken a company produce in a day
 how to execute?
 - take input:
-	- use printf - to ask input
+	- use printf - a prompt to ask input
 	- set a variable x for the input - ex: int eggs
 	- use scanf and special character to recognize the value
+
 - process the input:
 	- set variable and use double - our value might have decimal
 	- input must be divided by a dozen which is 12
+
 - printf the output */
 
 
@@ -17,11 +19,14 @@ how to execute?
 
 int main()
 {
-	printf("Please insert the number of eggs\n");
-	int eggs; 
-	scanf("%i", &eggs);
+	printf("Please insert the number of eggs\n"); // prompt for user input
+	int eggs; //declaration of variable
+	scanf("%i", &eggs); //recognized input --> stored data 
 
-	double dozen = (double) eggs / 12; //type casting - put a data type in parenthesis in the expression. why? -to get the exact decimal value ---> correct output   
+	double dozen = (double) eggs / 12; 
+	//type casting - put a data type in parenthesis in the expression. why? -to get the exact decimal value ---> correct output   
+	//let say input is eggs = 18 --> (double) 18 = 18.0 ---> 18.0/12 = 1.5 ---> stored in double ---> output is 1.5 
+	
 	printf("You have %f dozen eggs\n", dozen);
 
 	return 0; 
