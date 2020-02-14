@@ -23,7 +23,10 @@ int main()
 			//BUT! you must put 51 bcs strings need a character at the end to say the string is over --- null terminator. 
 	
 	printf("Hey! Who is your Got7 bias?\n");
-	scanf("%s", got7); //no need to put address of operator '&' bcs this is an array. 
+	scanf("%[^\n]", got7); 
+	//scanf("%49s", got7); //grab the first 49 characters
+	//no need to put address of operator '&' bcs this is an array.
+	// [^\n]--> help us to detect space between characters 
 
 	printf("Wow %s is awesome! Good looking guy\nAll Got7 members are SUPER TALENTED!!!\nOMO OMO OMO\ncringe iknow daa\n", got7);
 	return 0;
